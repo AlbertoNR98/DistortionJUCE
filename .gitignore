@@ -1,0 +1,6 @@
+## Ignore JUCE files (it will created automatically after opening DistortionJUCE.jucer)
+
+**/Builds
+**/JuceLibraryCode
+
+Notas.txt
