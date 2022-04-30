@@ -22,6 +22,17 @@ DistortionJUCEAudioProcessor::DistortionJUCEAudioProcessor()
     )
 #endif
 {
+    state = new juce::AudioProcessorValueTreeState(*this, nullptr);
+
+    state->createAndAddParameter("drive", "Drive", "Drive", juce::NormalisableRange<float>(0.f, 1.f, 0.0001), 1.0, nullptr, nullptr);
+    state->createAndAddParameter("range", "Range", "Range", juce::NormalisableRange<float>(0.f, 3000.f, 0.0001), 1.0, nullptr, nullptr);
+    state->createAndAddParameter("blend", "Blend", "Blend", juce::NormalisableRange<float>(0.f, 1.f, 0.0001), 1.0, nullptr, nullptr);
+    state->createAndAddParameter("volume", "Volume", "Volume", juce::NormalisableRange<float>(0.f, 3.f, 0.0001), 1.0, nullptr, nullptr);
+
+    state->state = juce::ValueTree("drive");
+    state->state = juce::ValueTree("range");
+    state->state = juce::ValueTree("blend");
+    state->state = juce::ValueTree("volume");
 }
 
 DistortionJUCEAudioProcessor::~DistortionJUCEAudioProcessor()
