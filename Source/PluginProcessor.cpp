@@ -162,11 +162,26 @@ void DistortionJUCEAudioProcessor::processBlock(juce::AudioBuffer<float>& buffer
     // Alternatively, you can process the samples with the channels
     // interleaved by keeping the same state.
 
+    float drive = *state->getRawParameterValue("drive");
+    float range = *state->getRawParameterValue("range");
+    float blend = *state->getRawParameterValue("blend");
+    float volume = *state->getRawParameterValue("volume");
+
     for (int channel = 0; channel < totalNumInputChannels; ++channel)
     {
         auto* channelData = buffer.getWritePointer(channel);
 
         // ..do something to the data...
+        for (int sample = 0; sample < buffer.getNumSamples(); sample++)
+        {
+            float cleanSig = *channelData;
+
+            *channelData *= drive * range;
+            *channelData = (((((2.f / float_Pi) * atan(*channelData)) * blend) + (cleanSig * (1.f - blend))) / 2.f) * volume;
+
+            channelData++;
+        }
+
     }
 }
 
