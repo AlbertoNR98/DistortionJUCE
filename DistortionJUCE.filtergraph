@@ -50,7 +50,7 @@
           uiLastY_Normal="132" uiopen_Normal="1">
     <PLUGIN name="AudioFilePlayer" format="VST3" category="Fx" manufacturer="Matkat Music LLC"
             version="1.0.0" file="D:\Software\Proyectos\C y C++\Software de JUCE\SpectrumEQ\AudioFilePlayer.vst3"
-            uniqueId="79fe81c" isInstrument="0" fileTime="18053d9e40f" infoUpdateTime="18077af0375"
+            uniqueId="79fe81c" isInstrument="0" fileTime="18053d9e40f" infoUpdateTime="1807878d301"
             numInputs="2" numOutputs="2" isShell="0" uid="e95d02c7"/>
     <STATE>304.VMjLgbR....O+fWarAhckI2bo8la8HRLt.iHfTlai8FYo41Y8HRUTYTK3HxO9.BOVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9DCMz3BTIISX1UEaho2ZVkUdAAkKAwDUigWRWkEcQ0VTucmUY4BQt3TQPolShAid1UiSWoUZEYzUQU0UYsFMFc0cpMjS14hTKYFTEo0ZAgWTmAiUYIVPSwDctHDUxUjUjYFTEo0ZAgWTmAiUYQmdFIVdt3hKt3hKt3hKt3hKtXlTU0DUQAURWoULEYzXqEEUXoWQF4RPDYFTzDzUXkWSG4RPDYmKtnWPt3hKt3hKt3hKJUELPUTPqI1aYcEV5UkQQcVTWgEOujzPu0Fbu4VYtQmO77hUSQ0LPwVcmklaSQWXzUlO..</STATE>
     <LAYOUT>
@@ -78,13 +78,13 @@
       </OUTPUTS>
     </LAYOUT>
   </FILTER>
-  <FILTER uid="23" x="0.4975" y="0.6563146997929606" uiLastX_Normal="2166"
-          uiLastY_Normal="402" uiopen_Normal="0">
-    <PLUGIN name="DistorsionJUCE" format="VST3" category="Fx|Distortion"
-            manufacturer="ARSA" version="1.0.0" file="D:\Software\Proyectos\C y C++\Software de JUCE\VSTDistorsion\NewProject\Builds\VisualStudio2022\x64\Debug\VST3\DistorsionJUCE.vst3"
-            uniqueId="78d299ca" isInstrument="0" fileTime="18077ae0760" infoUpdateTime="18077af0376"
+  <FILTER uid="24" x="0.495" y="0.6645962732919255" uiLastX_Normal="1219"
+          uiLastY_Normal="261" uiopen_Normal="1">
+    <PLUGIN name="DistortionJUCE" format="VST3" category="Fx|Distortion"
+            manufacturer="ARSA" version="1.0.0" file="D:\Software\Proyectos\C y C++\Software de JUCE\DistortionJUCE\Builds\VisualStudio2022\x64\Debug\VST3\DistortionJUCE.vst3"
+            uniqueId="78d299ca" isInstrument="0" fileTime="18078591e81" infoUpdateTime="1807878d301"
             numInputs="1" numOutputs="1" isShell="0" uid="c0568d28"/>
-    <STATE>410.VMjLgDY....O+fWarAhckI2bo8la8HRLt.iHfTlai8FYo41Y8HRUTYTK3HxO9.BOVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9HiLy3RL3XTXv.iUY4hKP4BQtTETRUDUS4BQl4xaQYjKAIFTAg1cVkEcQYjKwTjQgASUF4RPp4RPt3hKt3Bai8zXqLjKPUjZTEDLD4RPHAkVpEDTtbDUtjEdqw1XqEjYic1cVM1ZAAkKIAkKt3hKt.UP5Qzcq3hKTETRUAUSAAkKBolQY4BQ1ETQHcEVzMlUY4BVWgkbUcUVtPDTBQjKt3hKtDCduEFRP4hKUAkTEQ0TtPjYt7VTF4RPlAUPwfiQgACLVkkKXcEVxU0UY4BQPIDQt3hKt3BdwPySq7jKt3hKt3hKt3hKt3hRUACTEEzZh8VVWgkdUYTTmE0UX4BQP4hPqcjXm0jLh4BQP4xPt.0Qt3hKt3hKt3hKtQUUCUEQTg2ZrM1YQcUVDUjQicVP77RRC8Vav8lak4Fc9vyKVMEUy.Ea0cVZtMEcgQWY9..</STATE>
+    <STATE>410.VMjLgDY....O+fWarAhckI2bo8la8HRLt.iHfTlai8FYo41Y8HRUTYTK3HxO9.BOVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9HiLy3RL3XTXv.iUY4hKP4BQtTETRUDUS4BQl4xaQYjKAIFTAg1cVkEcQYjKwTjQgASUF4RPp4RPt3hKt3xJwb0QqLjKPUjZTEDLD4RPHAkVpEDTtbDUtjEdqw1XqEjYic1cVM1ZAAkKIAkKt3hKtLycXQWdq3hKTETRUAUSAAkKBolQY4BQ1ETQHcEVzMlUY4BVWgkbUcUVtPDTBQjKt3hKtjSaC0TRP4hKUAkTEQ0TtPjYt7VTF4RPlAUPwfiQgACLVkkKXcEVxU0UY4BQPIDQt3hKt3hKt3hYt.kKt3hKt3hKt3hKt3hRUACTEEzZh8VVWgkdUYTTmE0UX4BQP4hPqcjXm0jLh4BQP4xPt.0Qt3hKt3hKt3hKtQUUCUEQTg2ZrM1YQcUVDUjQicVP77RRC8Vav8lak4Fc9vyKVMEUy.Ea0cVZtMEcgQWY9..</STATE>
     <LAYOUT>
       <INPUTS>
         <BUS index="0" layout="C"/>
@@ -96,8 +96,8 @@
   </FILTER>
   <CONNECTION srcFilter="21" srcChannel="0" dstFilter="22" dstChannel="0"/>
   <CONNECTION srcFilter="21" srcChannel="1" dstFilter="22" dstChannel="1"/>
-  <CONNECTION srcFilter="22" srcChannel="0" dstFilter="23" dstChannel="0"/>
-  <CONNECTION srcFilter="22" srcChannel="1" dstFilter="23" dstChannel="0"/>
-  <CONNECTION srcFilter="23" srcChannel="0" dstFilter="19" dstChannel="0"/>
-  <CONNECTION srcFilter="23" srcChannel="0" dstFilter="19" dstChannel="1"/>
+  <CONNECTION srcFilter="22" srcChannel="0" dstFilter="24" dstChannel="0"/>
+  <CONNECTION srcFilter="22" srcChannel="1" dstFilter="24" dstChannel="0"/>
+  <CONNECTION srcFilter="24" srcChannel="0" dstFilter="19" dstChannel="0"/>
+  <CONNECTION srcFilter="24" srcChannel="0" dstFilter="19" dstChannel="1"/>
 </FILTERGRAPH>
