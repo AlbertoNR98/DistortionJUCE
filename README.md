@@ -1,2 +1,2 @@
-# DistorsionJUCE
-Distorsion VST3 made with JUCE
+# DistortionJUCE
+Distortion VST3 made with JUCE
