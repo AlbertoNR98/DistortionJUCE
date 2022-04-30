@@ -53,7 +53,12 @@ public:
     void getStateInformation (juce::MemoryBlock& destData) override;
     void setStateInformation (const void* data, int sizeInBytes) override;
 
+    juce::AudioProcessorValueTreeState& getState();
+
 private:
+    // State of the plug-in
+    juce::ScopedPointer<juce::AudioProcessorValueTreeState> state;
+
     //==============================================================================
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (DistortionJUCEAudioProcessor)
 };

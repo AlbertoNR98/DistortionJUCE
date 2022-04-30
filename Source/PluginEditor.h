@@ -9,6 +9,8 @@
 #include <JuceHeader.h>
 #include "PluginProcessor.h"
 
+using namespace juce;
+
 //==============================================================================
 /**
 */
@@ -23,6 +25,18 @@ public:
     void resized() override;
 
 private:
+    //Knobs -> ScopedPointer are deleted when the object goes out of scope.
+    ScopedPointer<Slider> driveKnob;
+    ScopedPointer<Slider> rangeKnob;
+    ScopedPointer<Slider> blendKnob;
+    ScopedPointer<Slider> volumeKnob;
+
+    //Knobs attachment -> AudioProcessorValueTreeState (XML format) for saving knobs values -> It could be used for preset.
+    ScopedPointer<AudioProcessorValueTreeState::SliderAttachment> driveAttachment;
+    ScopedPointer<AudioProcessorValueTreeState::SliderAttachment> rangeAttachment;
+    ScopedPointer<AudioProcessorValueTreeState::SliderAttachment> blendAttachment;
+    ScopedPointer<AudioProcessorValueTreeState::SliderAttachment> volumeAttachment;
+
     // This reference is provided as a quick way for your editor to
     // access the processor object that created it.
     DistortionJUCEAudioProcessor& audioProcessor;
